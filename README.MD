@@ -51,7 +51,11 @@ To test the script locally:
    # or
    npx http-server
    # or
-   php -S localhost:8080
+   npx live-server --port=8080
+   # or
+   ruby -run -ehttpd . -p8080
+   # or
+   cargo install miniserve && miniserve --port 8080
    ```
 3. Open `http://localhost:8080/test.html` in your browser
 4. Check the browser console (F12) to see redirect logs
